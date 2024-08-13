@@ -1,0 +1,44 @@
+.aside {
+  width: 296px;
+
+  .brand-logo {
+    width: 151px;
+  }
+
+  .list-group .list-group-item {
+    vertical-align: center;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+
+    p {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+
+    span {
+      margin-right: 16px;
+      font-size: 24px;
+    }
+  }
+
+  .member {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .name {
+      font-size: 16px;
+      line-height: 1; // 依照設計稿上的 line-height 設定的話會和看起來不一樣
+    }
+
+    .mail {
+      font-size: 14px;
+      line-height: 1; // 依照設計稿上的 line-height 設定的話會和看起來不一樣
+    }
+  }
+}
