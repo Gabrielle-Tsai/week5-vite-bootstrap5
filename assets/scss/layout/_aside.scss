@@ -1,18 +1,35 @@
 .aside {
   width: 296px;
+  color: $gray-900;
 
   .brand-logo {
     width: 151px;
   }
 
   .list-group .list-group-item {
-    vertical-align: center;
+    vertical-align: middle;
     border: none;
     background: transparent;
     padding: 0;
     margin-bottom: 26px;
     display: flex;
     align-items: center;
+    position: relative;
+
+    &.active {
+      color: $success;
+      font-weight: bold;
+    }
+
+    &.active::before {
+      content: '';
+      position: absolute;
+      left: -24px;
+      width: 4px;
+      top: 0;
+      bottom: 0;
+      background: green;
+    }
 
     p {
       display: inline-block;
@@ -22,23 +39,6 @@
     span {
       margin-right: 16px;
       font-size: 24px;
-    }
-  }
-
-  .member {
-    img {
-      width: 40px;
-      height: 40px;
-    }
-
-    .name {
-      font-size: 16px;
-      line-height: 1; // 依照設計稿上的 line-height 設定的話會和看起來不一樣
-    }
-
-    .mail {
-      font-size: 14px;
-      line-height: 1; // 依照設計稿上的 line-height 設定的話會和看起來不一樣
     }
   }
 }
