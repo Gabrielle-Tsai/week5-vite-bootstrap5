@@ -1,0 +1,15 @@
+.pagination {
+    li:first-child,
+    li:last-child {
+        a {
+            padding: 5px;
+            span {
+                vertical-align: middle;
+                color: $success;
+            }
+        }
+        &:hover a span {
+            color: $light;
+        }
+    }
+}

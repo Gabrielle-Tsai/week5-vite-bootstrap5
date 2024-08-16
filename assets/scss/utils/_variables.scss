@@ -883,16 +883,16 @@ $form-text-color: var(--#{$prefix}secondary-color) !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
-$form-label-margin-bottom: .5rem !default;
-$form-label-font-size: null !default;
+$form-label-margin-bottom: .25rem; // .5rem !default;
+$form-label-font-size: 14px; // null !default;
 $form-label-font-style: null !default;
 $form-label-font-weight: null !default;
 $form-label-color: null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
-$input-padding-y: $input-btn-padding-y !default;
-$input-padding-x: $input-btn-padding-x !default;
+$input-padding-y: 1rem; // $input-btn-padding-y !default;
+$input-padding-x: 1rem; // $input-btn-padding-x !default;
 $input-font-family: $input-btn-font-family !default;
 $input-font-size: $input-btn-font-size !default;
 $input-font-weight: $font-weight-base !default;
@@ -908,15 +908,15 @@ $input-font-size-lg: $input-btn-font-size-lg !default;
 
 $input-bg: var(--#{$prefix}body-bg) !default;
 $input-disabled-color: null !default;
-$input-disabled-bg: var(--#{$prefix}secondary-bg) !default;
-$input-disabled-border-color: null !default;
+$input-disabled-bg: $gray-100; // var(--#{$prefix}secondary-bg) !default;
+$input-disabled-border-color: $gray-100; // null !default;
 
 $input-color: var(--#{$prefix}body-color) !default;
-$input-border-color: var(--#{$prefix}border-color) !default;
+$input-border-color: $gray-900; // var(--#{$prefix}border-color) !default;
 $input-border-width: $input-btn-border-width !default;
 $input-box-shadow: var(--#{$prefix}box-shadow-inset) !default;
 
-$input-border-radius: var(--#{$prefix}border-radius) !default;
+$input-border-radius: 0; // var(--#{$prefix}border-radius) !default;
 $input-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
 $input-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;
 
@@ -956,8 +956,8 @@ $form-check-transition: null !default;
 
 $form-check-input-active-filter: brightness(90%) !default;
 
-$form-check-input-bg: $input-bg !default;
-$form-check-input-border: var(--#{$prefix}border-width) solid var(--#{$prefix}border-color) !default;
+$form-check-input-bg: $white; // $input-bg !default;
+$form-check-input-border: 2px solid $gray-900; //  var(--#{$prefix}border-width) solid var(--#{$prefix}border-color) !default;
 $form-check-input-border-radius: .25em !default;
 $form-check-radio-border-radius: 50% !default;
 $form-check-input-focus-border: $input-focus-border-color !default;
@@ -965,7 +965,7 @@ $form-check-input-focus-box-shadow: $focus-ring-box-shadow !default;
 
 $form-check-input-checked-color: $component-active-color !default;
 $form-check-input-checked-bg-color: $component-active-bg !default;
-$form-check-input-checked-border-color: $form-check-input-checked-bg-color !default;
+$form-check-input-checked-border-color: $gray-900; // $form-check-input-checked-bg-color !default;
 $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/></svg>") !default;
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 
@@ -1007,15 +1007,15 @@ $input-group-addon-border-color: $input-border-color !default;
 // scss-docs-end input-group-variables
 
 // scss-docs-start form-select-variables
-$form-select-padding-y: $input-padding-y !default;
-$form-select-padding-x: $input-padding-x !default;
+$form-select-padding-y: 1rem; // $input-padding-y !default;
+$form-select-padding-x: 1rem; // $input-padding-x !default;
 $form-select-font-family: $input-font-family !default;
 $form-select-font-size: $input-font-size !default;
 $form-select-indicator-padding: $form-select-padding-x * 3 !default; // Extra padding for background-image
 $form-select-font-weight: $input-font-weight !default;
 $form-select-line-height: $input-line-height !default;
-$form-select-color: $input-color !default;
-$form-select-bg: $input-bg !default;
+$form-select-color: $gray-600; // $input-color !default;
+$form-select-bg: $white; // $input-bg !default;
 $form-select-disabled-color: null !default;
 $form-select-disabled-bg: $input-disabled-bg !default;
 $form-select-disabled-border-color: $input-disabled-border-color !default;
@@ -1029,8 +1029,8 @@ $form-select-feedback-icon-position: center right $form-select-indicator-padding
 $form-select-feedback-icon-size: $input-height-inner-half $input-height-inner-half !default;
 
 $form-select-border-width: $input-border-width !default;
-$form-select-border-color: $input-border-color !default;
-$form-select-border-radius: $input-border-radius !default;
+$form-select-border-color: $gray-900; // $input-border-color !default;
+$form-select-border-radius: 2px; // $input-border-radius !default;
 $form-select-box-shadow: var(--#{$prefix}box-shadow-inset) !default;
 
 $form-select-focus-border-color: $input-focus-border-color !default;
@@ -1311,21 +1311,21 @@ $pagination-padding-x-lg: 1.5rem !default;
 
 $pagination-font-size: $font-size-base !default;
 
-$pagination-color: var(--#{$prefix}link-color) !default;
+$pagination-color: $dark; //var(--#{$prefix}link-color) !default;
 $pagination-bg: var(--#{$prefix}body-bg) !default;
-$pagination-border-radius: var(--#{$prefix}border-radius) !default;
+$pagination-border-radius: 2px; // var(--#{$prefix}border-radius) !default;
 $pagination-border-width: var(--#{$prefix}border-width) !default;
 $pagination-margin-start: calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
-$pagination-border-color: var(--#{$prefix}border-color) !default;
+$pagination-border-color: $success; //var(--#{$prefix}border-color) !default;
 
-$pagination-focus-color: var(--#{$prefix}link-hover-color) !default;
-$pagination-focus-bg: var(--#{$prefix}secondary-bg) !default;
+$pagination-focus-color: $success; // var(--#{$prefix}link-hover-color) !default;
+$pagination-focus-bg: $light; // var(--#{$prefix}secondary-bg) !default;
 $pagination-focus-box-shadow: $focus-ring-box-shadow !default;
 $pagination-focus-outline: 0 !default;
 
-$pagination-hover-color: var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg: var(--#{$prefix}tertiary-bg) !default;
-$pagination-hover-border-color: var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
+$pagination-hover-color: $light; // var(--#{$prefix}link-hover-color) !default;
+$pagination-hover-bg: $success; //var(--#{$prefix}tertiary-bg) !default;
+$pagination-hover-border-color: $success; //var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
 
 $pagination-active-color: $component-active-color !default;
 $pagination-active-bg: $component-active-bg !default;
@@ -1526,9 +1526,9 @@ $modal-title-line-height: $line-height-base !default;
 
 $modal-content-color: null !default;
 $modal-content-bg: var(--#{$prefix}body-bg) !default;
-$modal-content-border-color: var(--#{$prefix}border-color-translucent) !default;
+$modal-content-border-color: $gray-400; //var(--#{$prefix}border-color-translucent) !default;
 $modal-content-border-width: var(--#{$prefix}border-width) !default;
-$modal-content-border-radius: var(--#{$prefix}border-radius-lg) !default;
+$modal-content-border-radius: 2px; //var(--#{$prefix}border-radius-lg) !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
 $modal-content-box-shadow-xs: var(--#{$prefix}box-shadow-sm) !default;
 $modal-content-box-shadow-sm-up: var(--#{$prefix}box-shadow) !default;
