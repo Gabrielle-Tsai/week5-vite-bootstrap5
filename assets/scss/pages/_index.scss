@@ -26,3 +26,12 @@
     line-height: 1; // 依照設計稿上的 line-height 設定的話會和看起來不一樣
   }
 }
+
+.reply-textarea {
+  height: 263px;
+  resize: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}

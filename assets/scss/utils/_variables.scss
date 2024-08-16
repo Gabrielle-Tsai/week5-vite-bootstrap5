@@ -1362,7 +1362,7 @@ $card-title-color: null !default;
 $card-subtitle-color: null !default;
 $card-border-width: var(--#{$prefix}border-width) !default;
 $card-border-color: var(--#{$prefix}border-color-translucent) !default;
-$card-border-radius: var(--#{$prefix}border-radius) !default;
+$card-border-radius: 2px; // var(--#{$prefix}border-radius) !default;
 $card-box-shadow: null !default;
 $card-inner-border-radius: subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y: $card-spacer-y * .5 !default;
@@ -1600,7 +1600,7 @@ $list-group-color: var(--#{$prefix}body-color) !default;
 $list-group-bg: var(--#{$prefix}body-bg) !default;
 $list-group-border-color: var(--#{$prefix}border-color) !default;
 $list-group-border-width: var(--#{$prefix}border-width) !default;
-$list-group-border-radius: var(--#{$prefix}border-radius) !default;
+$list-group-border-radius: 2px; // var(--#{$prefix}border-radius) !default;
 
 $list-group-item-padding-y: $spacer * .5 !default;
 $list-group-item-padding-x: $spacer !default;
